@@ -1,0 +1,6 @@
+#+TITLE: Roadmap
+* hosting
+** domain
+* typescript
+* super key in emacs lol
+* fuckin learn to nav the docs FUCK
