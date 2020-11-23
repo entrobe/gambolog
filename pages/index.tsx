@@ -17,39 +17,25 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <h1>
             Welcome to{" "}
-            <a href="/" className="text-red-700">
-              GAMBOLOG
+            <a href="/" className="flex text-red-700">
+              {"GAMBOLOG".split("").map((l, i) => (
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  key={i}
+                  transition={{ delay: i * 0.3, duration: 2 }}
+                >
+                  {l}
+                </motion.div>
+              ))}
             </a>
           </h1>
-          {/* TODO: lets animate this guy here! */}
           <div className="mt-4">
-            {"GAMBOLOG".split("").map((l, i) => (
-              <motion.div
-                animate={{ rotate: 360 }}
-                key={i}
-                transition={{ duration: 2 }}
-              >
-                {l}
-              </motion.div>
-            ))}
-          </div>
-          <div className="mt-4">
-            <p>
-              Get started by diving into <code>THE OCEAN</code>
-            </p>
-            <p>Pardon my mess as this site is under construction</p>
-            {/* <a href="/nowhere">
-                <h3>Fun &rarr;</h3>
-                <p>Games. I promise nothing but fun.</p>
-                </a>
-                <a href="/learn">
-                <h3>Learn &rarr;</h3>
-                <p>Learn about the horrors before all humankind!</p>
-                </a>
-                <a href="/examples">
-                <h3>Examples &rarr;</h3>
-                <p>Discover and destroy all know order before you.</p>
-                </a> */}
+            <motion.p
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{ ease: "easeIn", duration: 4 }}>
+              Get started by diving into THE OCEAN
+            </motion.p>
           </div>
         </div>
       </main>
