@@ -5,3 +5,8 @@
 ** can't tell, bad outline... ugh! almost
 * super key in emacs lol
 * fuckin learn to nav the docs FUCK
+* animations
+** lil fade in on everything
+** then some bouncies and rotaties
+** gonna need to put em in a lil animation fam
+* need some content for the middle bit
